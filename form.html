@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <style>
+        fieldset{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register Form</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" placeholder="Enter your date of birth" required>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <label for="radio">Male</label>
+            <input type="radio" name="gender" id="male" value="male" required>
+            
+            <label for="radio">Female</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+        </fieldset>
+
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address" placeholder="Enter your home address" required>
+
+        <label for="phone number">Phone No:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+        <fieldset>
+            <legend>Courses:</legend>
+            <label for="music">Mathematics</label>
+            <input type="checkbox" name="mathematics" id="mathematics" required>
+
+            <label for="music">English</label>
+            <input type="checkbox" name="english" id="english" required>
+
+            <label for="music">General Studies</label>
+            <input type="checkbox" name="general_studies" id="general_studies" required>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+    </form>
+    
+</body>
+</html>
